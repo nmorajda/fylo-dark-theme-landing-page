@@ -1,0 +1,31 @@
+include ../../elements/socials/socials
+mixin footer({brand, footer, socials, contact} = data)
+    footer.footer
+        .container.footer__container
+            .footer__wrapper.gap--x2
+                .footer__logo 
+                    +link({attrs: {href: '#'}})
+                        +iconsvg({id: '#icon-logo'})
+                .footer__text-wrapper
+                    .footer__about 
+                        +iconsvg({id: '#icon-map-marker-alt', size: 'is-small'})
+                        p #{footer.text}
+                    .footer__contact
+                        ul
+                            li 
+                                +iconsvg({id: '#icon-mobile-alt', size: 'is-small'})
+                                +link({prefix: 'tel', attrs:{href: contact.phones[0].number, title: contact.phones[0].title}})
+                                    | #{contact.phones[0].number}
+                            li 
+                                +iconsvg({id: '#icon-envelope', size: 'is-small'})
+                                +link({attrs:{href: '/php/mailto.php', title: contact.mails[0].title}})
+                                    span.js-email
+                    .footer__menu 
+                        ul
+                            each item in footer.menu.items 
+                                li
+                                    +link({attrs: {href: item.attrs.href, class: "footer__menu__link"}})
+                                        | #{item.anchor}
+                    .footer__socials
+                        +socials(socials)
+

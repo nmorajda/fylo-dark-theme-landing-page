@@ -1,0 +1,13 @@
+mixin about({ about } = data)
+    section.section.about
+        .container.about__container
+                .about__wrapper
+                    .about__img-wrapper
+                        +picture(about.picture)
+                    .about__text-wrapper
+                        h2.about__heading #{about.heading}
+                        .about__text !{about.text}
+                        .about__link-wrapper
+                            +link({attrs: about.link.attrs})
+                                | #{about.link.text}
+                                +iconsvg({id: '#icon-arrow-right', size: 'is-small'})

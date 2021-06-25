@@ -1,0 +1,46 @@
+.field {
+    text-align: left;
+
+    &.success,
+    &.warning,
+    &.error {
+        .field__msg {
+            display: inline-block;
+            opacity: 1;
+        }
+    }
+
+    &.success {
+        color: $success;
+    }
+
+    &.warning {
+        color: $warning;
+    }    
+
+    &.error {
+        color: $error;
+    }
+
+    &__msg {
+        display: none;
+        opacity: 0;
+        margin: 1rem 3rem;
+        font-size: 1.3rem;
+        color: currentColor;
+    }
+}
+
+
+input {
+    width: 100%;
+    height: 5.8rem;
+    padding: 0 3rem;
+    border: none;
+    border-radius: 100vw;
+
+    &::placeholder {
+        font-size: 1.6rem;
+        color: $grey-300;
+    }
+}

@@ -1,0 +1,79 @@
+.cta {
+    position: relative;
+    z-index: 2;
+    margin-bottom: -12rem;
+    padding-top: 7rem;
+
+    @include breakpoint(md) {
+        padding-top: 9rem;
+    }
+
+    &__wrapper,
+    &__form-wrapper,
+    &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+    }
+
+    &__wrapper {
+        max-width: 111rem;
+        margin: 0 auto;
+        padding: 4.8rem calc(3.5rem + 2vw);
+        background-color: $blue-light;
+        border-radius: .8rem;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+        @include breakpoint(md) {
+            gap: $gap * 2;
+        }
+    }
+
+    &__form-wrapper {
+        @include breakpoint(md) {
+            flex-direction: row;
+
+            .field {
+                flex: 1 1 40%;
+            }
+    
+            button {
+                flex: 1 1 30%;
+                max-width: 26rem;
+            }
+        }
+    }
+
+    &__text-wrapper {
+        max-width: 76rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__heading {
+        font-size: 1.8rem;
+
+        @include breakpoint(md) {
+            font-size: 3.2rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        line-height: 1.6;
+        
+        @include breakpoint(md) {
+            font-size: 1.6rem;
+        }
+
+    }
+
+    .btn--primary {
+        align-self: center;
+
+        @include breakpoint(md) {
+            align-self: flex-start
+        }
+
+    }
+}

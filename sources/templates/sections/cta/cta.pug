@@ -1,0 +1,14 @@
+mixin cta({cta, contact} = data)
+    section.cta(id=cta.id)
+        .container.cta__container
+            .cta__wrapper
+                .cta__text-wrapper
+                    h2.cta__heading #{cta.heading}
+                    .cta__text !{cta.text}
+                .cta__form-wrapper
+                    .field
+                        input(type="email" id="email" value="" placeholder=cta.input.placeholder data-error-message="Please enter a valid email address" reqiured)
+                        span.field__msg.field__msg--error Lorem
+
+                    +button({attrs: cta.button.attrs})
+                        | #{cta.button.text}

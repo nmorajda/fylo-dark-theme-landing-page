@@ -1,0 +1,166 @@
+.footer {
+  position: relative;
+  padding: 20rem 0 5rem 0;
+  text-align: left;
+  font-size: 1.4rem;
+  line-height: 2;
+  color: $footer-text-color;
+  background-color: $footer-background-color;
+
+  @include breakpoint(md) {
+    padding: 21rem 0 6rem 0;
+  }
+  
+  a {
+    color: $footer-link-color;
+
+    &:hover {
+      color: $footer-link-hover-color;
+    }
+  }
+  
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: $gap *2;
+  }
+
+
+  &__logo {
+    a {
+      color: $white;
+    }
+
+    svg {
+      width: 12vw;
+      height: 46px;
+      min-width: 144px;
+      max-width: 192px;
+    }
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    justify-content: space-between;
+
+    @include breakpoint(md) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: $gap * 2;
+      align-items: flex-start;
+
+      &>* {
+        flex: 1 1 25%;
+      }
+    }
+
+    @include breakpoint(lg) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__about {
+    max-width: 48rem;
+    display: flex;
+    gap: $gap / 2;
+
+    .icon {
+      flex: 0 0 3.2rem;
+    }
+  }
+
+  &__contact {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: $gap;
+    }
+
+    li {
+      display: flex;
+      gap: $gap / 2;
+      align-items: center;
+
+      @include breakpoint(md) {
+        align-items: flex-start;
+      }
+
+      .icon {
+        flex: 0 0 3.2rem;
+      }
+    }
+  }
+
+  &__menu {
+    margin: $gap * 2 0;
+
+    @include breakpoint(md) {
+      margin: 0;
+    }
+
+    @include breakpoint(lg) {
+      columns: 2;
+    }
+
+    li {
+      margin-bottom: 1.4rem;
+
+      &:nth-child(4) {
+        margin-bottom: $gap;
+
+        @include breakpoint(md) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+    a {
+      width: 4.2rem;
+      height: 4.2rem;
+      border: 1px solid white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:link,
+      &:visited {
+        color: $footer-link-color;
+      }
+
+      &:hover,
+      &:focus {
+        border-color:  $link-hover-color;
+        .icon {
+          color: $link-hover-color;
+        }
+      }
+      .icon {
+        width: 2.6rem;
+        height: 2.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,278 @@
+{
+  "head": {
+    "html": {
+      "attrs": {
+        "class": "no-js",
+        "lang": "pl",
+        "dir": "ltr"
+      }
+    },
+    "robots": "",
+    "title": "Frontend Mentor | Fylo Dark Theme Landing Page | Norbert Morajda",
+    "description": "Fylo Dark Theme Landing Page. Coded by Norbert Morajda",
+    "fonts": "https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Open+Sans:wght@400;700&display=swap",
+    "styles": [],
+    "scripts": []
+  },
+
+  "brand": {
+    "lead": "Frontend Mentor | Fylo Dark Theme Landing Page",
+    "link": {
+      "attrs": {
+        "href": "/",
+        "title": "Frontend Mentor | Fylo Dark Theme Landing Page",
+        "class": "logo__link"
+      }
+    },
+    "logo": {
+      "id": "#icon-logo"
+    }
+  },
+
+  "menu": {
+    "mainMenu": {
+      "items": [
+        {
+          "anchor": "Features",
+          "attrs": { "href": "#features"}
+        },
+        {
+          "anchor": "Team",
+          "attrs": { "href": "#team"}
+        },        
+        {
+          "anchor": "Sign in",
+          "attrs": { "href": "#signin"}
+        }
+      ]
+    }
+  },
+  
+  "hero": {
+    "heading": "All your files in one secure location, accessible anywhere.",
+    "text": "Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.",
+    "picture": {
+      "sources": [
+        {
+          "media": "(min-width: 767px)",
+          "srcset": "images/desktop/illustration-intro.png"
+        }
+      ],
+      "img": {
+        "attrs": {
+          "src": "images/mobile/illustration-intro.png",
+          "alt": "Illustration"
+        }
+      }
+    },
+    "button": {
+      "text": "Get Started",
+      "attrs": {
+        "href": "#",
+        "class": "btn btn--primary btn--rounded"
+      }
+    }
+  },
+
+  "services": {
+    "id": "services",
+    "items": [
+      {
+        "title": "Access your files, anywhere.",
+        "text": "The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.",
+        "img": {
+          "attrs": {
+            "src": "images/icon-access-anywhere.svg",
+            "alt": "#"
+          }
+        }
+      },
+      {
+        "title": "Security you can trust.",
+        "text": "2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.",
+        "img": {
+          "attrs": {
+            "src": "images/icon-access-anywhere.svg",
+            "alt": "#"
+          }
+        }
+      },
+      {
+        "title": "Real-time collaboration.",
+        "text": "Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.",
+        "img": {
+          "attrs": {
+            "src": "images/icon-access-anywhere.svg",
+            "alt": "#"
+          }
+        }
+      },
+      {
+        "title": "Store any type of file.",
+        "text": "Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.",
+        "img": {
+          "attrs": {
+            "src": "images/icon-access-anywhere.svg",
+            "alt": "#"
+          }
+        }
+      }
+    ]
+  },
+
+  "about": {
+    "heading": "Stay productive, wherever you are.",
+    "text": "<p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p><p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>",
+    "link": {
+      "text": "See how Fylo works.",
+      "attrs": {
+        "href": "#",
+        "class": "about__link"
+      }
+    },
+    "picture": {
+      "sources": [
+        {
+          "media": "(min-width: 767px)",
+          "srcset": "images/desktop/illustration-stay-productive.png"
+        }
+      ],
+      "img": {
+        "attrs": {
+          "src": "images/mobile/illustration-stay-productive.png",
+          "alt": "Stay productive"
+        }
+      }
+    }
+  },
+
+  "testimonials": {
+    "id": "testimonials",
+    "heading": "CLIENT TESTIMONIALS",
+    "items": [
+      {
+        "name": "Satish Patel",
+        "role": "Founder & CEO, Huddle",
+        "text": "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+        "img": "images/profile-1.jpg"
+      },
+      {
+        "name": "Bruce McKenzie",
+        "role": "Founder & CEO, Huddle",
+        "text": "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+        "img": "images/profile-2.jpg"
+      },
+      {
+        "name": "Iva Boyd",
+        "role": "Founder & CEO, Huddle",
+        "text": "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+        "img": "images/profile-3.jpg"
+      }
+    ]
+  },
+
+  "cta": {
+    "heading": "Get early access today.",
+    "text": "It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.",
+    "input": {
+      "placeholder": "example@example.com"
+    },
+    "button": {
+      "text": "Get Started For Free",
+      "attrs": {
+        "class": "btn btn--primary btn--rounded"
+      }
+    }
+  },
+
+  "contact": {
+    "name": "ABM STUDIO",
+    "firm": "ABM STUDIO Norbert Morajda",
+    "street": "ul. Kopernika 22",
+    "city": "33-170 Tuchów",
+    "nip": "PL 8732577306",
+    "regon": "123174986",
+    "phones": [
+      {
+        "number": "(+48) 665 665 025",
+        "title": "Zadzwoń do nas"
+      }
+    ],
+    "mails": [
+      {
+        "address": "biuro@abmstudio.pl",
+        "title": "Napisz do nas"
+      }
+    ],
+    "websites": [
+      {
+        "href": "https://www.abmstudio.pl/",
+        "text": "ABM STUDIO",
+        "title": "Web Development"
+      }
+    ]    
+  },
+
+  "socials": [
+    {
+      "name": "Facebook",
+      "href": "https://www.facebook.com",
+      "title": "",
+      "id": "#icon-facebook"
+    },
+    {
+      "name": "Instagram",
+      "href": "https://www.instagram.com",
+      "title": "",
+      "id": "#icon-instagram"
+    },
+    {
+      "name": "Twitter",
+      "href": "https://www.twitter.com",
+      "title": "",
+      "id": "#icon-twitter"
+    }
+  ],
+
+  "footer": {
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "menu": {
+        "title": "Menu",
+        "items": [
+          {
+            "anchor": "About Us",
+            "attrs": { "href": "#"}
+          },
+          {
+            "anchor": "Jobs",
+            "attrs": { "href": "#"}
+          },        
+          {
+            "anchor": "Press",
+            "attrs": { "href": "#"}
+          },
+          {
+            "anchor": "Blog",
+            "attrs": { "href": "#"}
+          },
+          {
+            "anchor": "Contact Us",
+            "attrs": { "href": "#"}
+          },
+          {
+            "anchor": "Terms",
+            "attrs": { "href": "#"}
+          },
+          {
+            "anchor": "Privacy",
+            "attrs": { "href": "#"}
+          }          
+        ]
+    }
+  },
+
+  "copyright": [
+    "Challenge by <a href=\"https://www.frontendmentor.io/?ref=challenge\" target=\"_blank\">Frontend Mentor.</a>",
+    "Coded by <a href=\"https://github.com/nmorajda\" target=\"_blank\">N. Morajda.</a>"
+  ]
+}

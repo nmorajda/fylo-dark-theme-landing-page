@@ -1,0 +1,71 @@
+.testimonials {
+    &__wrapper {
+        display: flex;
+        gap: $gap * 2;
+        flex-direction: column;
+        align-items: center;
+
+        @include breakpoint(md) {
+            flex-direction: row;
+            gap: initial;
+            justify-content: space-around
+        }
+    }
+
+
+    .testimonial {
+
+        &__card {
+            position: relative;
+            max-width: 36rem;
+            padding: $gap;
+            background-color: $blue-accent;
+            border-radius: .6rem;
+            box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.03);
+            display: flex;
+            flex-direction: column;
+            gap: $gap;
+
+            &:first-child() {
+
+                &:before {
+                    content: url(../images/bg-quotes.png);
+                    position: absolute;
+                    top: -3rem;
+                    left: -1.5rem;
+                    z-index: -1;
+                }
+            }
+        }
+
+        &__text-wrapper {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        &__author-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        &__author-img {
+            img {
+                width: 4rem;
+                margin-right: 1.5rem;
+                border-radius: 50%;
+            }
+        }
+
+        &__author-content {
+            text-align: left;
+            font-size: 1.2rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__author {
+            font-weight: bold;
+        }
+    }
+}

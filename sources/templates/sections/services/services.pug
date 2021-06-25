@@ -1,0 +1,12 @@
+mixin services({services} = data)
+    div.services(id=services.id)
+        .container.services__container
+            .services__wrapper
+                each item in services.items
+                    .service__item
+                        .service__img-wrapper
+                            +img(item.img)
+                        .service__text-wrapper
+                            .service__text-content
+                                h2.heading.service__heading #{item.title}
+                                p.service__text #{item.text}

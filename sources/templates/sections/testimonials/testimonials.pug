@@ -1,0 +1,14 @@
+mixin testimonials({ testimonials } = data)
+    section.section.testimonials
+        .container.testimonials__container
+            .testimonials__wrapper
+                each testimonial in testimonials.items 
+                    .testimonial__card
+                        .testimonial__text-wrapper
+                            p.testimonial__text #{testimonial.text}
+                        .testimonial__author-wrapper
+                            .testimonial__author-img
+                                +img({attrs: {src: testimonial.img, alt: testimonial.name}})
+                            .testimonial__author-content
+                                span.testimonial__author #{testimonial.name}
+                                span.testimonial__role #{testimonial.role}

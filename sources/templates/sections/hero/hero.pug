@@ -1,0 +1,10 @@
+mixin hero({ hero } = data)
+    section.hero
+        .container.hero__container
+            .hero__img-wrapper 
+                +img(hero.picture.img)
+            .hero__text-wrapper
+                h1.hero__heading !{hero.heading}
+                p.hero__lead !{hero.text}
+                +link({attrs: hero.button.attrs})
+                    | #{hero.button.text}
